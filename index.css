@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bbb;
+}
+
+#header {
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .logo img {
+    height: 40px;
+}
