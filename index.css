@@ -92,11 +92,11 @@ a {
     min-width: 700px;
 }
 
-.content-right .content-right-header {
+.content-right-header {
     padding-top: 10px;
 }
 
-.content-right .content-right-header p {
+.content-right-header p {
     font-size: 24px;
     font-weight: 700;
     border-bottom: 1px solid #eee;
@@ -197,4 +197,66 @@ a {
 
 .item .bg-color-black {
     background-color: #000;
+}
+
+.subbanner-area {
+    margin-top: 30px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.subbanner-area .subbanner {
+    margin: 0 20px;
+}
+
+.content-banner-right {
+    height: 758px;
+    position: relative;
+}
+
+.content-left {
+    width: 750px;
+    min-width: 700px;
+}
+
+.content-banner-right .banner-right {
+    width: 758px;
+    height: 800px;
+    background-image: url(/scr/img/banner-right.webp);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 35px;
+}
+
+.tip-box {
+    width: 100%;
+    height: 60px;
+    background-color: #F76B6A ;
+}
+
+.tip-box .tip-box-content p {
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* .tip-box .tip-box-content .link-more */
+
+.column-3items {
+    margin-top: 20px;
+}
+
+.row-items {
+    width: 250px;
+    height: 400px;
+    background-color: #f0f0f0;
+}
+
+.column-3items .row-items-title {
+    font-size: 24px;
+    font-weight: 700;
 }
