@@ -387,3 +387,38 @@ a {
     font-size: 14px;
     color: #999;
 }
+
+.form-field {
+    width: 300px;
+    border: 1px solid #bbb;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.form-subscribe .form-subscribe-input {
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    color: #999;
+    font-size: 13px;
+    line-height: 18px;
+    border: none;
+    background-color: transparent;
+    outline: 0;
+}
+
+.form-subscribe .form-subscribe-input:focus::placeholder {
+    color: transparent;
+}
+
+.form-field .button-subscribe  button{
+    width: 100px;
+    height: 40px;
+    background-color: #F76B6A;
+    appearance: none;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
