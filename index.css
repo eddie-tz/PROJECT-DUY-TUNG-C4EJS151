@@ -7,13 +7,11 @@
 html {
     font-family: "Nunito Sans", sans-serif;
     min-width: 1200px;
-
 }
 
-ul, li {
+.menu ul, li {
     list-style: none;
     display: flex;
-    padding: 10px;
 }
 
 a {
@@ -35,16 +33,84 @@ a {
     height: 38px;
 }
 
-#header .container .header-content a {
+#header .container .header-content .menu .title-menu {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
     color: #333;
     line-height: 95px;
+    transition: color 0.5s ease;
+    padding: 15px;
+
+}
+
+#header .container .header-content .menu a:hover {
+    color: #F76B6A;
 }
 
 #header .container .header-content ul li img {
     height: 15px;
+}
+
+.header-menu {
+    position: relative;
+}
+
+.header-menu .menu ul li:hover .header-menu-submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-menu .menu ul li .header-menu-submenu {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 105px;
+    left: -50px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+    z-index: 10;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.submenu-container {
+    padding: 35px;
+    display: flex;
+}
+
+.submenu-item {
+    width: 200px;
+    height: auto;
+    padding: 0px;
+}
+
+.submenu-item a{
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.5s ease;
+}
+
+.submenu-item a:hover {
+    color: #F76B6A;
+}
+
+
+.submenu-column {
+    padding: 10px 0 0 0;
+}
+
+.submenu-column a {
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.submenu-item ul {
+    display: block;
 }
 
 .container {
@@ -61,6 +127,14 @@ a {
 
 .header-content i {
     padding: 0 8px;
+}
+
+.header-button a {
+    transition: color 0.5s ease;
+}
+
+.header-button a:hover {
+    color: #F76B6A;
 }
 
 .banner {
