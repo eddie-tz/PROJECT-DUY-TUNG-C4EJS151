@@ -247,7 +247,7 @@ a {
 
 }
 
-.item .item-color {
+.item-color {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -258,19 +258,19 @@ a {
 
 }
 
-.item .bg-color-olivegreen {
+.bg-color-olivegreen {
     background-color: #6c7152;
 }
 
-.item .bg-color-blue {
+.bg-color-blue {
     background-color: #a8bcd4;
 }
 
-.item .bg-color-pink {
+.bg-color-pink {
     background-color: #fcc6de;
 }
 
-.item .bg-color-black {
+.bg-color-black {
     background-color: #000;
 }
 
@@ -581,3 +581,56 @@ a {
     margin-top: 15px;
     color: #333;
 }
+
+.product-color {
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+.product-color p {
+    color: #666;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.product-color .item-color {
+    margin-top: 10px;
+}
+
+.product-size p {
+    color: #666;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.product-size-flex {
+    display: flex;
+}
+
+.product-size-tag {
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+}
+
+.product-size-tag-selected {
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+    background-color: #000;
+}
+
+.product-size-tag-selected .selected {
+    color: #fff;
+}
+
