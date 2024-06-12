@@ -264,9 +264,29 @@
                 </div>
                 </div>
 
-
                 <div class="variations-button">
-                    
+                    <div class="spinner">
+                        <button type="button" onclick="document.getElementById('quantity').stepDown()">-</button>
+                        <input type="number" id="quantity" value="1" min="1" step="1">
+                        <button type="button" onclick="document.getElementById('quantity').stepUp()">+</button>
+                    </div>
+                    <div class="button-pink">
+                        <button class="add-to-cart" type="submit">Add to cart</button>
+                    </div>
+                    <div class="button-green">
+                        <button type="submit" class="buy-it-now">BUY IT NOW</button>
+                    </div>
+                </div>
+
+                <div class="more-details">
+                    <span class="p-bold">SKU: </span><span class="p-normal">Chenille Sweater-1</span>
+                    <br>
+                    <span class="p-bold">Thương hiệu: </span><span class="p-normal">Elessi</span>
+                    <br>
+                    <span class="p-bold">Tình trạng: </span><span class="p-normal">Còn hàng</span>
+                    <br>
+                    <span class="p-bold">Phân loại: </span> <a href="" class="p-normal">Áo len</a>,  <a href="" class="p-normal"> Thời trang nữ</a>, <a href="" class="p-normal">Bán chạy</a>
+
                 </div>
             </div>
         </div>
