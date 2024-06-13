@@ -30,7 +30,7 @@ a {
 }
 
 #header .logo img {
-    height: 38px;
+    height: 32px;
 }
 
 #header .container .header-content .menu .title-menu {
@@ -229,11 +229,11 @@ a {
     padding: 3px;
 }
 
-.item-content .item-title {
+.item-title {
     margin-bottom: 7px;
 }
 
-.item .item-oldprice {
+.item-oldprice {
     color: #ccc;
     text-decoration: line-through;
     display: inline-block;
@@ -241,7 +241,7 @@ a {
 
 }
 
-.item .item-newprice {
+.item-newprice {
     color: #333;
     display: inline-block;
 
@@ -525,6 +525,7 @@ a {
 .body-content {
     margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product-img {
@@ -535,7 +536,7 @@ a {
 
 .product-big-img img {
     width: 570px;
-    height: 720px;
+    height: 650px;
     background-color: #eee;
 }
 
@@ -634,7 +635,105 @@ a {
     color: #fff;
 }
 
+.variations-button {
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.spinner {
+    display: flex;
+    align-items: center;
+}
+.spinner input[type=number] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
 
+}
+.spinner input[type=number]::-webkit-inner-spin-button,
+.spinner input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.spinner button {
+    height: 40px;
+    width: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+}
+
+.spinner button:active {
+    background-color: #bbb;
+}
+
+.add-to-cart {
+    width: 220px;
+    height: 40px;
+    background-color: #F76B6A;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 10px;  
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.add-to-cart:hover {
+    background-color: #F54543;
+}
+
+.buy-it-now {
+    border: none;
+    background-color: #79b530;
+    width: 350px;
+    height: 45px;
+    margin-top: 10px;
+    border-bottom: 2px solid #709047;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buy-it-now:hover {
+    background-color: #79A130;
+}
+
+.more-details {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.more-details .p-bold {
+    color: #000;
+    font-weight: 800;
+}
+
+.more-details .p-normal {
+    color: #888;
+}
+
+.more-details a:hover {
+    color: #F76B6A;
+    text-decoration: underline;
+}
 .product-description {
     margin-top: 50px;
     display: flex;
@@ -671,12 +770,32 @@ a {
     height: 20px;
 }
 
-.you-may-like-tittle {
-    display: inline-block;
-    text-align: center;
+.you-may-like {
+
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
+
+.you-may-like-tittle {
+    display: flex;
+    justify-content: center;
+}
+
 .you-may-like-tittle h2 {
     font-size: 26px;
     display: inline-block;
     text-align: center;
+}
+
+.you-may-like-items {
+    display: flex;
+    margin-top: 20px;
+}
+.four-items {
+    padding-right: 20px;
+}
+
+.four-items img {
+    width: 277px;
+    margin-bottom: 15px;
 }
