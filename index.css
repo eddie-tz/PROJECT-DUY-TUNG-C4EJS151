@@ -634,3 +634,49 @@ a {
     color: #fff;
 }
 
+
+.product-description {
+    margin-top: 50px;
+    display: flex;
+}
+
+.product-description-content {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.product-description-content h2 {
+    margin-bottom: 25px;
+}
+.product-description-content p {
+    margin-top: 10px;
+    color: #333;
+    line-height: 25px;
+}
+
+.size-chart {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+.size-chart th, .size-chart td {
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+.size-chart th {
+    width: 150px;
+    height: 20px;
+}
+
+.you-may-like-tittle {
+    display: inline-block;
+    text-align: center;
+}
+.you-may-like-tittle h2 {
+    font-size: 26px;
+    display: inline-block;
+    text-align: center;
+}
