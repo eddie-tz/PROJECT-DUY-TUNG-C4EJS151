@@ -45,6 +45,11 @@ a {
 
 }
 
+#header .container .header-content .menu .active {
+    font-weight: 800;
+    color: #F54543;
+}
+
 #header .container .header-content .menu a:hover {
     color: #F76B6A;
 }
@@ -191,23 +196,23 @@ a {
     margin-bottom: 20px;
 }
 
-.item .item-img {
+.item-img {
     position: relative;
 }
 
-.item .item-img img {
+.item-img img {
     width: 100%;
     height: 270px;
     position: relative;
 }
 
-.item .item-tag {
+.item-tag {
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-.item .sale-tag {
+.sale-tag {
     width: 50px;
     background-color: #F76B6A;
     text-align: center;
@@ -217,7 +222,7 @@ a {
     margin-bottom: 8px;
 }
 
-.item .sale-off {
+.sale-off {
     width: 50px;
     background-color: #9cc46a;
     text-align: center;
@@ -387,6 +392,7 @@ a {
     height: 450px;
     background-color: #f7f7f7;
     border-top: 1px solid #ececec;
+    margin-top: 60px;
 }
 
 .footer-top-wrap {
@@ -780,17 +786,154 @@ a {
 }
 
 .you-may-like {
-    display: flex;
-    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 
 .you-may-like-tittle {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .you-may-like-tittle h2 {
     font-size: 26px;
     display: inline-block;
     text-align: center;
+}
+
+
+.you-may-like-tittle h2 {
+    font-size: 26px;
+    display: inline-block;
+    text-align: center;
+}
+
+.you-may-like-items {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.four-items {
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+.four-items img {
+    width: 277px;
+    margin-bottom: 15px;
+}
+
+.banner-contact {
+    width: 100%;
+    height: 150px;
+    background-image: url(/scr/img/contact/banner-contact.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-contact h2 {
+    font-size: 26px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}   
+
+.quote-tittle {
+    display: flex; /* Đặt thuộc tính flex cho .quote-tittle */
+    text-align: center; /* Căn giữa văn bản bên trong thẻ <p> */
+    width: 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quote-tittle p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.quote-tittle-name {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.quote-tittle-name h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.quote-tittle-name h4 {
+    color: #888;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.contact-content {
+    width: 50%;
+    margin-top: 60px;
+    padding-right: 50px;
+    display: flex;
+    padding-top: 30px;
+}
+
+.contact-content-left-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 40px;
+}
+
+.contact-content-left-text h3 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.contact-content-left-text p {
+    width: 500px;
+    text-align: right;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+
+
+.contact-content-left-text img {
+    width: 580px;
+}
+
+.contact-content-right img {
+    width: 500px;
+}
+
+.contact-content-right-text {
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.contact-content-right-text p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.contact-content-right-text h4 {
+    margin-top: 30px;
+}
+
+.banner-love-items {
+    width: 100%;
+    height: 130px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
