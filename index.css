@@ -779,6 +779,11 @@ a {
     height: 20px;
 }
 
+.you-may-like {
+    display: flex;
+    justify-content: center;
+}
+
 .you-may-like-tittle {
     display: inline-block;
     text-align: center;
