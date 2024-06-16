@@ -937,3 +937,23 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.tab-menu ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.tab-menu li a {
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tab-menu li  .selected {
+    text-decoration: underline;
+    font-weight: 800;
+    text-underline-offset: 10px;
+}
