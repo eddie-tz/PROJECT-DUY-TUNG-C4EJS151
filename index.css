@@ -10,7 +10,7 @@ html {
 
 }
 
-ul, li {
+.header-content ul, li {
     list-style: none;
     display: flex;
     padding: 10px;
@@ -63,28 +63,100 @@ a {
     padding: 0 8px;
 }
 
+.content {
+    position: relative;
+}
+
 .box-content {
-    margin-top: 50px;
     display: flex;
-    margin-left: 10%;
+    padding: 3% 3% 0 5%;
+    gap: 20px
 }
 
 .box-items-collection {
-    padding-top: 30px;
     display: grid;
     grid-template-columns: auto  auto  auto;
-    grid-row: auto auto auto;
     gap: 20px;
+    min-width: 70%;
+}
+
+.head-filter{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.filter-menu{
+position: relative;
+display: inline-block;
+}
+
+.filter-list{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type:armenian;
+    width:fit-content;
+    padding: 20px;
+}
+.filter-list li:hover{
+    background-color: #F76B6A;
+}
+.filter-list a{
+    font-weight: 700;
+}
+.filter-menu:hover .filter-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 150px;
+
+}
+.menuu{
+    position:relative;
+    display: inline-block;
+}
+
+.feature-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 10;
+    width: 200px;
+}
+.feature-menu li:hover{
+    background-color: #F76B6A;
+}
+.menuu:hover .feature-menu{
+    display:block
+}
+
+.button-collection{
+    width: 20px;
+    height: 40px;
 }
 
 .filter{
-    display: flex;
-    flex-direction: column;
-    padding-right: 10px;
     font-size: 12px;
-    margin-right: 50px;
-    height: ;
+    max-width: 30%;
 }
+
+.navigator {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 54%;
+    margin-bottom: 10px;
+}
+
 .shipping{
     padding: 5px;
 
@@ -93,11 +165,11 @@ a {
 .item {
     width: 220px;
     height: 370px;
-    margin-bottom: 20px;
 }
 
 .item .item-img {
     position: relative;
+    
 }
 
 .item .item-img img {
@@ -162,6 +234,21 @@ a {
     margin-top: 5px;
     display: inline-block;
 
+}
+.first-img{
+opacity: 1;
+transition: opacity 0.5s ease;
+}
+.second-img{
+opacity: 0;
+transition: opacity 0.5s ease;
+right:0px;
+}
+.item-img:hover .first-img{
+    opacity: 0;
+}
+.item-img:hover .second-img{
+    opacity: 1;
 }
 .page-number{
     border-style: hidden;

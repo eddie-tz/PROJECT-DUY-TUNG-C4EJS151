@@ -21,6 +21,8 @@
 </head>
 
 <body>
+    <script src="index.js">
+    </script>
     <div id="header">
         <div class="container">
             <div class="header-content">
@@ -69,11 +71,56 @@
     <div>
         <img src="scr/img/background catogie.webp" ; width="100%" ; alt="">
     </div>
+    <div class="content">
+        <div class="head-filter">
+            <div class="filter-menu">
+                <div style="font-weight:bold ;">FILTER</div>
+                <div class="filter-list">
+                    <ul><a href="#">Sizes</a>
+                        <li>S</li>
+                        <li>M</li>
+                        <li>L</li>
+                        <li>XL</li>
+                    </ul>
+                    <ul><a href="#">Brands</a>
+                        <li>Demo</li>
+                        <li>Nike</li>
+                        <li>Adidas</li>
+                        <li>Puma</li>
+                    </ul>
+                    <ul><a href="#">Color</a>
+                        <li style="background-color: red;">Red</li>
+                        <li style="background-color: blue;">Blue</li>
+                        <li style="background-color: black;color: white;">Black</li>
+                        <li style="background-color: white;">White</li>
+                    </ul>
+                    <ul><a href="">Availability</a>
+                        <li>Instock</li>
+                        <li>Out of Stock</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div> Bố cục sản phẩm
+                <a href="#"> <button class="button-collection" value="3">III</button></a>
+                <a href="#"> <button class="button-collection" value="4">IIII</button></a>
+            </div> -->
+            <div class="menuu">
+                <div style="font-weight: bold;">FEATURED</div>
+                <ul class="feature-menu">
+                    <li><a href="#">Best Selling</a></li>
+                    <li><a href="#">Tên A-Z</a></li>
+                    <li><a href="#">Tên Z-A</a></li>
+                    <li><a href="#">Giá tăng dần</a></li>
+                    <li><a href="#">Giá giảm dần</a></li>
+                    <li><a href="#">Hàng mới nhất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="box-content">
         <div class="filter">
-            <h2 style="padding-left: 30px; padding-bottom: 20px; font-size: 15px;">+FILTER</h2>
             <h2>Product Categories</h2>
-            <ul class="filter">
+            <ul class="categories">
                 <li>Men (99+)</li>
                 <li>Women (99+)</li>
                 <li>Baby (99+)</li>
@@ -84,26 +131,28 @@
                 <li>On sale (99+)</li>
                 <li>Top rate (99+)</li>
             </ul>
-            <h2>Talk about your brand</h2>
-            <p>Use this text to share information about your brand with your customers. Describe a product, share
-                announcements, or welcome customers to your store.</p>
-            <br>
-            <h2>Shipping & Delivery</h2>
-            <img class="shipping" src="scr/img/delivery-svgrepo-com.svg" width="50px" alt="">
-            <p>
-            <h3>FREE SHIPPING</h3>Free Shipping for all US order</p>
-            <img class="shipping" src="scr/img/customer-care-svgrepo-com.svg" width="50px" alt="">
-            <p>
-            <h3>SUPPORT 24/7</h3>We support 24 hours a day</p>
-            <img class="shipping" src="scr/img/exchange-svgrepo-com.svg" width="50px" alt="">
-            <p>
-            <h3>30 DAYS RETURN</h3>You have 30 days to return</p>
-            <br>
+            <div class="filter-info">
+                <h2>Talk about your brand</h2>
+                <p>Use this text to share information about your brand with your customers. Describe a product,
+                    share
+                    announcements, or welcome customers to your store.</p>
+                <h2>Shipping & Delivery</h2>
+                <img class="shipping" src="scr/img/delivery-svgrepo-com.svg" width="50px" alt="">
+                <p>
+                <h3>FREE SHIPPING</h3>Free Shipping for all US order</p>
+                <img class="shipping" src="scr/img/customer-care-svgrepo-com.svg" width="50px" alt="">
+                <p>
+                <h3>SUPPORT 24/7</h3>We support 24 hours a day</p>
+                <img class="shipping" src="scr/img/exchange-svgrepo-com.svg" width="50px" alt="">
+                <p>
+                <h3>30 DAYS RETURN</h3>You have 30 days to return</p>
+            </div>
         </div>
-        <div class="box-items-collection">
+        <div class="box-items-collection" ; id="box-items-collection">
             <div class="item">
                 <div class="item-img">
-                    <img src="scr/img/collection 1.webp" alt="">
+                    <img src="scr/img/collection 1.webp" alt="" class="first-img">
+                    <img src="scr/img/collection 1 hover.webp" alt="" class="second-img" style="position: absolute;">
                     <div class="item-tag">
                         <div class="sale-tag">SALE</div>
                         <div class="sale-off">20$</div>
@@ -239,13 +288,57 @@
                     <div class="item-color bg-color-black"></div>
                 </div>
             </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="scr/img/collection 10.webp" alt="">
+                </div>
+                <div class="item-content">
+                    <div class="item-title">Áo khoác siêu đẹp</div>
+                    <div class="item-newprice">300.000đ</div>
+                    <div class="item-oldprice">450.000đ</div>
+                    <br>
+                    <div class="item-color bg-color-olivegreen"></div>
+                    <div class="item-color bg-color-pink"></div>
+                    <div class="item-color bg-color-black"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="scr/img/collection 11.webp" alt="">
+                </div>
+                <div class="item-content">
+                    <div class="item-title">Áo khoác siêu đẹp</div>
+                    <div class="item-newprice">300.000đ</div>
+                    <div class="item-oldprice">450.000đ</div>
+                    <br>
+                    <div class="item-color bg-color-olivegreen"></div>
+                    <div class="item-color bg-color-pink"></div>
+                    <div class="item-color bg-color-black"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="scr/img/collection 12.webp" alt="">
+                </div>
+                <div class="item-content">
+                    <div class="item-title">Áo khoác siêu đẹp</div>
+                    <div class="item-newprice">300.000đ</div>
+                    <div class="item-oldprice">450.000đ</div>
+                    <br>
+                    <div class="item-color bg-color-olivegreen"></div>
+                    <div class="item-color bg-color-pink"></div>
+                    <div class="item-color bg-color-black"></div>
+                </div>
+            </div>
         </div>
-        <div style="background-color: rgb(241, 112, 112);" class="page-number">1</div>
-        <div class="page-number">2</div>
-        <div class="page-number">3</div>
-        <div class="page-number">4</div>
-        <img class="page-number" src="scr/img/chevron-right-svgrepo-com.svg" ; height="45px" alt="">
     </div>
+    <ul class="navigator">
+        <li style="background-color: rgb(241, 112, 112);" class="page-number">1</li>
+        <li class="page-number">2</li>
+        <li class="page-number">3</li>
+        <li class="page-number">4</li>
+        <img class="page-number" src="scr/img/chevron-right-svgrepo-com.svg" ; height="45px" alt="">
+    </ul>
 
     <div id="footer">
         <div class="container">
