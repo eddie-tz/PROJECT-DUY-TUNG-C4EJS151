@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+
+<body>
+    <header>
+        <header class="checkout-header">
+            <div class="header-container">
+                <img src="/PROJECT-DUY-TUNG-C4EJS151/scr/img/logo.png" alt="Store Logo" class="logo">
+                <h1>Checkout</h1>
+            </div>
+        </header>
+    </header>
+    <div class="container-payment">
+        <div class="left">
+            <h2>Product Details</h2>
+            <div class="product-pay">
+                <img src="/PROJECT-DUY-TUNG-C4EJS151/scr/img/collection 4.webp" alt="Product Image">
+                <div class="product-info-pay">
+                    <h3>Áo khoác siêu đẹp</h3>
+                    <p>Description: Áo khoác siêu đẹp</p>
+                    <p>Price: $23.00</p>
+                    <input placeholder="Discount code" type="text" id="discount" name="discount" required>
+                    <button type="submit">Apply</button>
+                </div>
+            </div>
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-right: 20px;">
+                <p style="line-height: 20px;">Subtotal
+                    <br>
+                    Shipping
+                    <br>
+                    Estimate taxes
+                </p>
+                <p style="font-weight: bold;line-height: 20px;">$23.00
+                    <br>
+                    FREE
+                    <br>
+                    $2.30
+                </p>
+            </div>
+            <div style="display:flex; align-items: center; justify-content: space-between; margin-right: 20px;">
+                <h2>Total</h2>
+                <p style="font-weight:bold;">USD $25.30</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="contact-pay">
+                <h2>Contact</h2>
+                <a href="#">Login</a>
+            </div>
+            <form id="checkoutForm">
+                <input placeholder="Email or mobile phone number" type="text" id="fullName" name="fullName" required>
+                <br>
+                <input type="checkbox" id="email" name="email" required>
+                <label for="email">Email me with news and offers</label><br>
+                <h2>Delivery</h2>
+                <div
+                    style="display: grid; grid-template-columns: auto auto; align-items: center;border:solid 1px; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                    <div>
+                        <input type="radio" name="duy">
+                    </div>
+                    <div>
+                        <label for="shipping-check">
+                            <div class="ship-check1">
+                                <p style="padding-right: 100px;">Ship</p>
+                                <span>
+                                    <img src="/PROJECT-DUY-TUNG-C4EJS151/scr/img/delivery-svgrepo-com.svg" ;
+                                        width="30px" ; height="30" alt="">
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="ship-check2">
+                    <div>
+                        <input type="radio" name="duy">
+                    </div>
+                    <div>
+                        <label for="shipping-check">
+                            <div style="display:flex; align-items: center; justify-content: space-between;">
+                                <p style="padding-right: 100px;">Pickup in store</p>
+                                <span>
+                                    <img src="/PROJECT-DUY-TUNG-C4EJS151/scr/img/customer-care-svgrepo-com.svg" ;
+                                        width="30px" ; height="30" alt="">
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div style="font-size: 16px;"><label style="margin-top: 100px;" for="country">Country/Region</label>
+                    <select style="padding: 15px; padding-right: 110px;" id="country" name="country" required>
+                        <option value="">Việt Nam</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="AU">Australia</option>
+                        <option value="IN">India</option>
+                        <option value="IN">China</option>
+                        <option value="IN">Japan</option>
+                        <option value="IN">France</option>
+                </div>
+
+                <div style="display:inline;">
+                    <input placeholder="Name" type="text" name="fullName" required>
+                    <input placeholder="Address" type="text" required>
+                    <input placeholder="Apartment, suit, etc." type="text" required>
+                    <input placeholder="City" type="text" required>
+                    <input placeholder="Postal code" type="text" required>
+                    <input type="checkbox" id="email" name="email" required>
+                    <label for="email">Save this infomation for next time</label>
+                </div>
+                <div>
+                    <h3>Shipping method</h3>
+                    <div style="border: solid 1px; padding: 15px; display: flex; justify-content: space-between;" ;">
+                        <span>Standar Shipping</span>
+                        <span>Free</span>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-checkout">
+            <p>&copy; 2024 Degrey Fashion Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

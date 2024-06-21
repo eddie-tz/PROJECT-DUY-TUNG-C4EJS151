@@ -143,10 +143,11 @@ display: inline-block;
     height: 40px;
 }
 
-.filter{
-    font-size: 12px;
+.filter {
+    font-size: 14px;
     max-width: 30%;
 }
+
 
 .navigator {
     display: inline-flex;
@@ -158,8 +159,17 @@ display: inline-block;
 }
 
 .shipping{
-    padding: 5px;
-
+    padding-top: 15px;
+}
+.filter-info{
+    text-align: justify;
+    line-height: 25px;
+    padding-top: 20px;
+    padding-bottom: 10PX;
+    padding-right:50px;
+}
+.filter-info p{
+    padding-top: 8px;
 }
 
 .item {
@@ -260,6 +270,8 @@ right:0px;
     position: relative;
     align-content: center;
     position: relative;
+    width: 30px;
+    height: 30px;
 }
 
 .item .bg-color-olivegreen {
