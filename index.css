@@ -1020,3 +1020,153 @@ a {
 .collection-grid-img-content a:hover {
     color: #F76B6A;
 }
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-content {
+    margin: 30px;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-content i {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+}
+
+.search-content input {
+    outline: none;
+    border: 1px solid #999;
+    width: 600px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.login-content {
+    margin: 50px;
+    width: 450px;
+    align-self: center;
+    justify-content: center;
+}
+
+.login-content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-content p {
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-content input {
+    margin-top: 10px;
+    width: 450px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 18px;
+
+}
+
+.login-content input:focus {
+    padding-left: 10px;
+}
+
+.forgotpass-register {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgotpass-register a {
+    color: #666;
+    font-size: 14px;
+}
+
+.forgotpass-register a:hover {
+    color: #F76B6A;
+}
+
+.login-content button {
+    margin-top: 30px;
+    width: 450px;
+    height: 45px;
+    outline: none;
+    font-weight: 600;
+    border: 2px solid #999;
+    background-color: #fff;
+}
+
+.login-content button:hover {
+    background-color: #F76B6A;
+    color: #fff;
+    border: none;
+}
+
+.login-content button:active {
+    background-color: #F54543;
+}
+
+.cart-content {
+    margin-top: 50px;
+}
+
+
+.cart-content-tittle{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.cart-content-tittle h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-content-tittle-product {
+    width: 600px;
+}
+
+.cart-content-tittle-price {
+    width: 250px;
+}
+
+.cart-content-tittle-quantity {
+    width: 250px;
+}
+
+.cart-content-tittle-total {
+    width: 100px;
+}
+
+.cart-content-listing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-content-listing-product {
+    width: 600px
+}
+.cart-content-listing h4 {
+    font-weight: 700;
+    
+}
