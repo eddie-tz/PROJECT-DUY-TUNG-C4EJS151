@@ -1,32 +1,32 @@
  .header-container {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .checkout-header{
-  background-color: #636262;
+  background-color: #aca9a9;
   color: white;
   text-align: center;
-  padding: 10px 0px 0px 0px;
 }
-.logo {
-  max-width: 150px;
-}
+
 .container-payment {
   display: flex;
   justify-content: space-between;
-  max-width: 50%;
-  margin: 50px auto;
+  max-width: 80%;
+  margin: 30px auto;
   padding: 20px;
 }
   .left, .right {
     flex: 1;
   }
   .left{
-    background-color: #ccc;
-    padding-left: 10px;
+    background-color: #f9f6f6;
+    padding-left: 25px;
     padding-right: 20px;
+    font-size: 15px;
+  }
+  .right{
+    padding-left: 10px;
   }
   .product-pay {
     display: flex;
@@ -35,9 +35,9 @@
   }
   
   .product-pay img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
+    width: 180px;
+    height: 220px;
+    margin-right: 18px;
   }
   
   .product-info-pay h3 {
@@ -76,15 +76,12 @@
   }
 
   .ship-check1{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-
   }
   .ship-check2{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex ;
+    gap: 20px;
     align-items: center;
     border: solid 1px;
     border-top: none; 
@@ -103,10 +100,80 @@
 .paynow{
 display: flex;
 justify-content: center;
-padding: 10px;
+padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
   footer {
-    background-color: #636262;
+    background-color: #aca9a9;
     color: #fff;
     padding: 10px 0;
 }
