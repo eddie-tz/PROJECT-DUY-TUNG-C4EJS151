@@ -162,7 +162,7 @@ display: inline-block;
     padding-top: 15px;
 }
 .filter-info{
-    text-align: justify;
+    text-align: left;
     line-height: 25px;
     padding-top: 20px;
     padding-bottom: 10PX;
