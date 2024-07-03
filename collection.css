@@ -16,10 +16,6 @@ html {
     padding: 10px;
 }
 
-a {
-    text-decoration: none;
-}
-
 #header {
     width: 100%;
     height: 95px;
@@ -61,6 +57,10 @@ a {
 
 .header-content i {
     padding: 0 8px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .content {
@@ -157,6 +157,11 @@ display: inline-block;
     margin-left: 54%;
     margin-bottom: 10px;
 }
+.categories{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 15px;
+}
 
 .shipping{
     padding-top: 15px;
@@ -164,12 +169,12 @@ display: inline-block;
 .filter-info{
     text-align: left;
     line-height: 25px;
-    padding-top: 20px;
-    padding-bottom: 10PX;
+    padding-top: 15px;
+    padding-bottom: 15PX;
     padding-right:50px;
 }
 .filter-info p{
-    padding-top: 8px;
+    padding-top: 10px;
 }
 
 .item {
