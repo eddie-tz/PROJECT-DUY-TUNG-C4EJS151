@@ -200,8 +200,20 @@
         </div>
     </div>
 
-    <a href="/collection_list.html" class="banner">
-    </a>
+    <!-- <a href="/collection_list.html" class="banner">
+    </a> -->
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="/scr/img/banner.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="/scr/img/banner1.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="/scr/img/banner2.jpg" alt="Image 3"></div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
 
     <div class="box-content">
         <div class="content-banner-left"></div>
@@ -431,7 +443,7 @@
     <div class="tip-box">
         <div class="tip-box-content">
             <p>Giảm giá đến 70% toàn bộ sản phẩm - Từ ngày 30/06 - 15/07 -
-                <p class="link-more">Xem thêm »</p>
+                <p class="link-more"><a href="/collection.html">Xem thêm »</a></p>
             </p>
             
         </div>
@@ -615,5 +627,14 @@
         </div>
     </div>
     
+    <script>
+        let index = 0;
+        function moveSlide(n) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            index = (index + n + totalSlides) % totalSlides;
+            slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+        }
+    </script>
 </body>
 </html>
